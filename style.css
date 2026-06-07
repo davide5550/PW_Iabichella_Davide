@@ -1,0 +1,60 @@
+/* Variabili per una maggiore comodità di richiamo */
+:root {
+    --arancio-primario: #190800;
+    --arancio-tenue: #f4a460;
+    --arancio-sfondo: #f5deb3;
+    --grigio-testo: #333333;
+    --bianco: #ffffff;
+    --ombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Configurazioni per tutti gli elementi presenti */
+* {
+    margin: 0; /* Reset del margine di tutti gli elementi */
+    padding: 0; /* Reset del padding di tutti gli elementi */
+    box-sizing: border-box; /* Includi padding e bordi in larghezza ed altezza */
+}
+
+
+/* Configurazione del body generica */
+
+body {
+    font-family: perpetua;        /* font di scrittura */
+    line-height: 1.5;             /* spazio tra una riga e l'altra 1.5 moltiplicato per il font-size */
+    color: var(--grigio-testo);
+    background-color: var(--bianco);
+}
+
+/* Classe per il bottone di download */
+
+.download-btn {
+    display: inline-flex;   /* utilizzo un contenitore flexbox */
+    align-items: center;    /* con contenuto centrato */
+    background-color: var(--bianco);   /* colore sfondo */
+    color: var(--arancio-primario);    /* colore testo */
+    padding: 15px 35px;        /* spazio tra content e border */
+    border-radius: 50px;       /* arrotondamento angoli */
+    text-decoration: none;      /* pulisci link da sottolineato */
+    font-weight: 600;           /* spessore del testo  */
+    transition: all 0.3s ease;   /* piccola animazione al passaggio del mouse */
+    box-shadow: 0 4px 15px var(--ombra);  /* ombra con nessuno spostamento orizzontale , 4px di ombra verso il basso e 15px di sfocatura */
+}
+
+
+        /* Header */
+
+header {
+    background: linear-gradient(135deg, var(--arancio-primario) 0%, var(--arancio-tenue) 100%);
+    color: var(--bianco);
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: serif;
+    font-size: 70px; 
+    font-weight: 900;
+    margin-bottom: 15px;
+}
