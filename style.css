@@ -5,6 +5,7 @@
     --arancio-sfondo: #f5deb3;
     --grigio-testo: #333333;
     --bianco: #ffffff;
+    --marrone: #986243;
     --ombra: rgba(0, 0, 0, 0.1);
 }
 
@@ -44,7 +45,8 @@ body {
         /* Header */
 
 header {
-    background: linear-gradient(135deg, var(--arancio-primario) 0%, var(--arancio-tenue) 100%);
+    /* Dissolvenza del colore puramente estetico */
+    background: linear-gradient(to right, var(--arancio-primario) , var(--arancio-tenue)); /*https://www.w3schools.com/css/css3_gradients.asp */
     color: var(--bianco);
     padding: 80px 20px;
     text-align: center;
@@ -55,6 +57,152 @@ header {
 header h1 {
     font-family: serif;
     font-size: 70px; 
-    font-weight: 900;
+    font-weight: 900px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-family: "cursive", Lucida Handwriting;
+    font-size: 30px; 
+    font-weight: 300px;
     margin-bottom: 15px;
 }
+
+
+         /* Navigation Bar */
+
+nav {
+    background-color: var(--bianco);
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px var(--ombra);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;         /* Gli elementi del contenitore flexbox andranno a capo se non hanno spazio sufficiente nella riga */ 
+    gap: 15px;               /* spazio in pixel tra gli elemeneti della Navigation bar */
+    list-style: none;        /* rimuovo i pallini dalla lista solo per estetica */
+}
+
+nav a {
+    color: var(--arancio-primario);
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 700px;
+    border-radius: 50px;   /* arrotondo gli angoli dell'elemento 'a' */
+}
+
+nav a:hover {              /* semplicemente applica un colore quando l'utente passa il mouse sull'elemento 'a' */
+    background-color: var(--arancio-sfondo);
+      }
+     
+
+         /* Main */
+
+section {
+    margin-bottom: 70px; /* spazio di 70 px inserito sotto ogni sezione */ 
+    scroll-margin-top: 80px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 80 px così da essere certi di visualizzare correttamente tutti gli elementi */
+
+    /* voglio centrare ogni sezione correttamente */
+    max-width: 1200px; /* max larghezza del contenuto di ogni sezione */
+    margin: 0 auto 70px; /* 0 spazio sopra, laterali automatici calcolati dal browser considerando sempre i 1200px di larghezza massima, 70 px di spazio sotto */
+    padding: 0 20px;  /* il padding del box content(section) avrà 0 px sopra e sotto e 20 px lateralmente */
+
+}
+
+section h2 {
+    font-family: perpetua;
+    font-size: 35px;
+    color: var(--arancio-primario);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--arancio-sfondo);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+section h2 .icon {
+    font-size: 35px;
+}
+
+section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: var(--marrone);
+   
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+section p {
+    font-family: perpetua;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+
+/* Card */
+/* https://www.w3schools.com/css/css_grid.asp */
+/* contenitore DIV esterno */
+.highlights {
+    display: grid;  /* creo un grid con RIGHE e COLONNE */
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+
+/* DIV di ogni singola card */
+.highlight-card {
+    background: linear-gradient(to right, var(--arancio-tenue) , var(--bianco));     /* Dissolvenza del colore puramente estetico */
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(45, 80, 22, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.highlight-card:hover {
+    /* animazione per spostare lungo l'asse y verso l'alto l'elemento al passaggio del mouse */
+    transform: translateY(-5px); /* https://www.w3schools.com/cssref/func_translatey.php */
+}
+
+        .highlight-card .numero {
+            font-family: perpetua;
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--arancio-primario);
+            display: block; /* tratto lo span come un blocco che occupa tutta la larghezza disponibile e và a capo */
+        }
+
+        .highlight-card .etichetta {
+            font-size: 20px;
+            color: var(--arancio-primario);
+            margin-top: 5px;
+        }
+
+
+
+        /* Personalizzazioni Liste */
+ul {
+    margin: 15px 0 15px 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+       /* Box informativi */
+
+
