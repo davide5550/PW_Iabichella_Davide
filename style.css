@@ -62,7 +62,7 @@ header h1 {
 }
 
 header h2 {
-    font-family: "cursive", Lucida Handwriting;
+    font-family: serif;
     font-size: 30px; 
     font-weight: 300px;
     margin-bottom: 15px;
@@ -106,7 +106,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
 section {
     margin-bottom: 70px; /* spazio di 70 px inserito sotto ogni sezione */ 
-    scroll-margin-top: 80px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 80 px così da essere certi di visualizzare correttamente tutti gli elementi */
+    scroll-margin-top: 100px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
 
     /* voglio centrare ogni sezione correttamente */
     max-width: 1200px; /* max larghezza del contenuto di ogni sezione */
@@ -144,7 +144,7 @@ section h3 {
 section p {
     font-family: perpetua;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -201,8 +201,102 @@ ul {
 
 li {
     margin-bottom: 10px;
+    font-size: 20px
 }
 
        /* Box informativi */
 
+.info-box {
+    background-color: var(--arancio-sfondo);
+    border-left: 4px solid var(--arancio-primario); /* bordo sinistro marcato di 4px con linea continua(solid) colorata */
+    border-right: 4px solid var(--arancio-primario); /* bordo destro marcato di 4px con linea continua(solid) colorata */
+    padding: 20px 25px; /* paddig superiore/inferiore 20px, destra/sinsitra 25px */
+    border-radius: 10px 10px 10px 10px;  /* arrotondamento angoli di 10px */
+}
 
+.two-columns {
+    display: grid;  /* contenitore grid */
+    grid-template-columns: auto auto;  /* grid container con due colonne la cui dimensione dipende dal contenuto e dal container  https://www.w3schools.com/cssref/pr_grid-template-columns.php */ 
+    gap: 30px;  /* distanza tra gli elementi */
+    margin: 25px 0;
+
+}
+
+.column-card {
+    background-color: var(--bianco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--ombra);
+}
+
+.column-card h4 {
+    color: var(--arancio-primario);
+    font-size: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+      /* Sezione conclusiva */
+
+
+.conclusione {
+    background: linear-gradient(to right, var(--arancio-tenue) , var(--arancio-sfondo));
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+.quattro-dimensioni {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.dimensione {
+    background-color: var(--bianco);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 15px var(--ombra);
+}
+
+        .dimensione .num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--arancio-primario);
+            color: var(--bianco);
+            border-radius: 50%;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .dimensione p {
+            font-size: 18px;
+            margin: 0;
+        } 
+
+        /* Footer */
+
+footer {
+    background-color: var(--marrone);
+    color: var(--bianco);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+        footer p {
+            font-size: 20px;
+        }
+
+        footer .download-btn {
+            margin-top: 20px;
+        }
