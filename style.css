@@ -6,6 +6,9 @@
     --grigio-testo: #333333;
     --bianco: #ffffff;
     --marrone: #986243;
+    --blu: #3498db;
+    --rosa: #FFC0CB;
+    --verde: #008000;
     --ombra: rgba(0, 0, 0, 0.1);
 }
 
@@ -144,7 +147,7 @@ section h3 {
 section p {
     font-family: perpetua;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 
@@ -201,7 +204,7 @@ ul {
 
 li {
     margin-bottom: 10px;
-    font-size: 20px
+    font-size: 25px
 }
 
        /* Box informativi */
@@ -237,6 +240,59 @@ li {
     gap: 10px;
 }
 
+.column-card li {
+    margin-left: 10px;
+}
+
+
+      /* grafico a torta */
+
+.grafici {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.grafico {
+    text-align: center;
+}
+
+.torta {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: conic-gradient(   /* distribuisce i colori attorno a un cerchio da 0 a 83% blu, il restante rosa */
+    var(--blu) 0% 83%,
+    var(--rosa) 83% 100%
+  );
+  margin: 20px auto;
+}
+
+.torta-CCNL {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--verde);
+  margin: 20px auto;
+}
+
+
+/*.legenda {
+  font-family: Arial, sans-serif;
+  margin-left: 280px;
+} */
+
+.legenda span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;  /* questa prioprietà allinea visibilmente il quadrettino al testo */
+}
+  .blu { background: var(--blu); }
+  .rosa { background: var(--rosa); }
+  .verde { background: var(--verde); }
 
 
       /* Sezione conclusiva */
