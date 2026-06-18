@@ -32,7 +32,6 @@ body {
 /* Classe per il bottone di download */
 
 .download-btn {
-    display: inline-flex;   /* utilizzo un contenitore flexbox */
     align-items: center;    /* con contenuto centrato */
     background-color: var(--bianco);   /* colore sfondo */
     color: var(--arancio-primario);    /* colore testo */
@@ -350,6 +349,7 @@ footer {
 
         footer p {
             font-size: 20px;
+            margin-bottom: 20px;
         }
 
         footer .download-btn {
