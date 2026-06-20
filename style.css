@@ -32,6 +32,7 @@ body {
 /* Classe per il bottone di download */
 
 .download-btn {
+    display: inline-flex;   /* utilizzo un contenitore flexbox */
     align-items: center;    /* con contenuto centrato */
     background-color: var(--bianco);   /* colore sfondo */
     color: var(--arancio-primario);    /* colore testo */
@@ -41,6 +42,12 @@ body {
     font-weight: 600;           /* spessore del testo  */
     transition: all 0.3s ease;   /* piccola animazione al passaggio del mouse */
     box-shadow: 0 4px 15px var(--ombra);  /* ombra con nessuno spostamento orizzontale , 4px di ombra verso il basso e 15px di sfocatura */
+}
+
+.download-btn:hover {
+    background-color: var(--arancio-sfondo); /* applica un colore quando l'utente passa il mouse sul bottone di download */
+    transform: translateY(-5px); /* animazione per spostare lungo l'asse y verso l'alto l'elemento al passaggio del mouse */
+    /* https://www.w3schools.com/cssref/func_translatey.php */
 }
 
 
@@ -349,7 +356,6 @@ footer {
 
         footer p {
             font-size: 20px;
-            margin-bottom: 20px;
         }
 
         footer .download-btn {
