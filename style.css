@@ -9,6 +9,7 @@
     --blu: #3498db;
     --rosa: #FFC0CB;
     --verde: #008000;
+    --grigio-base: #eeeeee;
     --ombra: rgba(0, 0, 0, 0.1);
 }
 
@@ -27,6 +28,29 @@ body {
     line-height: 1.5;             /* spazio tra una riga e l'altra 1.5 moltiplicato per il font-size */
     color: var(--grigio-testo);
     background-color: var(--bianco);
+}
+
+.back-to-top {
+    position: fixed; /* elemento sempre visibile sullo schermo, anche quando scrolli */
+    bottom: 20px; /* posizionato a 20 px sopra il bordo inferiore */
+    right: 20px;  /* posizionato a 20 px sopra il bordo destro */
+    width: 50px;
+    height: 50px;
+    background-color: var(--arancio-tenue);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px var(--ombra);
+    z-index: 1000;  /* l'elemento si troverà sopra ogni altro elemento sempre visibile: >1000 valore per gli elementi in primo piano */
+}
+
+.back-to-top:hover {
+    background-color: var(--arancio-primario);
 }
 
 /* Classe per il bottone di download */
@@ -112,9 +136,73 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
          /* Main */
 
+.presentazione {
+
+    margin-bottom: 70px;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto 70px;
+}
+
+.presentazione h2 { 
+    font-family: perpetua;
+    font-size: 35px;
+    color: var(--arancio-primario);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--arancio-sfondo);
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+}
+
+.presentazione h3 { 
+    font-family: perpetua;
+    font-size: 25px;
+    color: var(--arancio-primario);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+}
+
+.presentazione p { 
+    font-family: perpetua;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+/* barra di progressione */
+
+.stat {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 22px;
+}
+
+.progress {
+    width: 100%;
+    height: 14px;
+    background-color: var(--grigio-base);
+    border-radius: 20px;
+    overflow: hidden;  /* nascondo tutto ciò che esce dai confini dell'elemento */
+}
+
+.bar {
+    height: 100%;
+    background: linear-gradient(to right, var(--arancio-sfondo), var(--arancio-tenue));
+    border-radius: 20px;
+}
+
+
 section {
     margin-bottom: 70px; /* spazio di 70 px inserito sotto ogni sezione */ 
-    scroll-margin-top: 100px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
+    scroll-margin-top: 120px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
 
     /* voglio centrare ogni sezione correttamente */
     max-width: 1200px; /* max larghezza del contenuto di ogni sezione */
@@ -200,8 +288,6 @@ section p {
             margin-top: 5px;
         }
 
-
-
         /* Personalizzazioni Liste */
 ul {
     margin: 15px 0 15px 25px;
@@ -220,6 +306,22 @@ li {
     border-right: 4px solid var(--arancio-primario); /* bordo destro marcato di 4px con linea continua(solid) colorata */
     padding: 20px 25px; /* paddig superiore/inferiore 20px, destra/sinsitra 25px */
     border-radius: 10px 10px 10px 10px;  /* arrotondamento angoli di 10px */
+}
+
+.info-box-persone {
+    background-color: var(--arancio-sfondo);
+    border-left: 4px solid var(--arancio-primario); /* bordo sinistro marcato di 4px con linea continua(solid) colorata */
+    border-right: 4px solid var(--arancio-primario); /* bordo destro marcato di 4px con linea continua(solid) colorata */
+    padding: 20px 25px; /* paddig superiore/inferiore 20px, destra/sinsitra 25px */
+    border-radius: 30px 30px 30px 30px;  /* arrotondamento angoli di 20px */
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.info-box-persone p {
+    font-size: 30px;
+    text-align: center;
 }
 
 .two-columns {
