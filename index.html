@@ -28,8 +28,9 @@
         <!-- Include il bottone per il Download attraverso condivisione Drive ad inizio e fine pagina -->      
 
 
-<body>
-	
+<body id="top"> <!-- top è un ancoraggio per raggiungere facilmente l'inizio pagina -->
+        <a href="#top" class="back-to-top">⬆</a>	
+        
 		<!-- Intestazione con presentazione azienda e bottone di download del file PDF -->
 	    <header>
         <h1> Planeta </h1>
@@ -62,6 +63,59 @@
    		<!-- Pagina Principale -->
 
     <main>
+        <!-- Presentazione Azienda: Contesto -->
+
+        <div class="presentazione">
+            <h2>Chi siamo?</h2>
+
+            <p> Aziende Agricole Planeta nasce nel 1694, con una storia di 17 generazioni e un ruolo chiave nella rinascita del vino siciliano. <br>
+             La famiglia continua a guidare l’azienda, con un viaggio tra i territori di Menfi, Vittoria, Noto, Etna e Capo Milazzo. <br>
+             Il core business è concentrato principalmente nella produzione e nella distribuzione di olio e vino in tutto il globo. <br> </p>
+             <h3> Alcuni dati: </h3>
+             <p>Nel 2024, Planeta ha prodotto: </p>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero"><span class="icon">🍇</span>1.808</span>
+                    <span class="etichetta">Tonnellate di uva</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero"><span class="icon">🍷</span>2.126.822</span>
+                    <span class="etichetta">Bottiglie di vino con 8 denominazioni e 22 varietà.</span>
+                </div>
+            </div>
+
+            <p>La distribuzione internazionale copre:</p>
+
+            <div class="stat">
+                <div class="label"><span class="icon">🇪🇺</span> Vendite vino in Europa - 74%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 74%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">🇮🇹</span> Vendite olio in Italia - 28%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 28%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">⇅🍷</span>Export vino - 55%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 55%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">⇅🫒</span>Export olio - 72%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 72%;"></div>
+                </div>
+            </div>
+
+        </div>
+
 
         <!-- Sezione 1: Agricoltura Biologica -->
         <section id="agricoltura">
@@ -200,7 +254,11 @@
         <section id="acqua">
             <h2><span class="icon">💧</span> Gestione Sostenibile dell'Acqua <span class="icon">💧</span></h2>
             
-            <p>La gestione idrica rappresenta sia un impegno ambientale sia una strategia di <strong>adattamento climatico</strong>.</p>
+            <p>La gestione idrica rappresenta sia un impegno ambientale sia una strategia di <strong>adattamento climatico</strong>.<br>
+            L'azienda si impegna a ridurre i prelievi e migliorare la qualità degli scarichi, adottando pratiche agronomiche sostenibili e tutelando il suolo e il paesaggio.
+            Prelievi totali di acqua nel 2024 pari a 114.361 m3, principalmente per irrigazione (oltre il 95%).
+            Scarichi idrici di 1.153 m3, con gestione mirata per minimizzare impatti ambientali.
+            </p>
 
             <ul>
                 <li>Monitoraggio costante dei consumi idrici</li>
@@ -220,6 +278,14 @@
                     <span class="numero">&gt;80%</span>
                     <span class="etichetta">Vetro riciclato post-consumo nelle bottiglie</span>
                 </div>
+                 <div class="highlight-card">
+                    <span class="numero"><span class="icon">🪶</span>470 g</span></span>
+                    <span class="etichetta">Peso medio delle bottiglie di vino</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><span class="icon">🎯</span><strong> Obiettivo: </strong>Riduzione del peso delle bottiglie di vino e olio, con peso massimo paria a 550 g/0,75 l.</p>
             </div>
 
             <h3>Le Iniziative intraprese</h3>
@@ -249,10 +315,9 @@
         <section id="persone">
             <h2><span class="icon">👥</span> Persone e Sostenibilità Sociale <span class="icon">👥</span></h2>
 
-            <ul>
-                <li> Aumento della presenza femminile </li>   <!-- Modifica su TAG HTML prioritaria rispetto al foglio CSS */ -->
-                <li> 100% dei lavoratori coperti da CCNL </li>  
-            </ul>
+            <div class="info-box-persone">
+                <p><span class="icon">🫂</span>Raggiunti oltre <strong> 255 </strong> dipendenti</p>
+            </div>
 
             <div class="grafici">
             
@@ -272,6 +337,11 @@
                 </div>
             
             </div>
+
+            <ul>
+                <li> Aumento della presenza femminile </li>   <!-- Modifica su TAG HTML prioritaria rispetto al foglio CSS */ -->
+                <li> 100% dei lavoratori coperti da CCNL </li>  
+            </ul>
 
 
             <div class="two-columns">
@@ -346,30 +416,47 @@
 
         <!-- Conclusione -->
         <section class="conclusione">
-            <h2><span class="icon">🎯</span> Il Nostro Approccio Integrato</h2>
+            <h2><span class="icon">📜</span> Le nostre certificazioni</h2>
             
-            <p>L'aspetto più distintivo di Planeta non è l'esistenza di singole iniziative "green", ma il fatto che la <strong>sostenibilità sia integrata in quattro dimensioni contemporaneamente</strong>:</p>
+            <p>La sostenibilità per Planeta non è un obiettivo dichiarato, <strong>ma un impegno concreto certificato da standard ,</strong> riconosciuti a livello nazionale e internazionale. </p>
 
             <div class="quattro-dimensioni">
                 <div class="dimensione">
                     <span class="num">1</span>
-                    <p><strong>Gestione agricola biologica</strong></p>
+                    <p><strong>Certificazione Biologica</strong></p>
                 </div>
                 <div class="dimensione">
                     <span class="num">2</span>
-                    <p><strong>Conservazione del paesaggio e biodiversità</strong></p>
+                    <p><strong>Certificazione SOStain®</strong></p>
                 </div>
                 <div class="dimensione">
                     <span class="num">3</span>
-                    <p><strong>Riduzione degli impatti climatici</strong></p>
+                    <p><strong>UNI EN ISO 9001:2015</strong></p>
                 </div>
                 <div class="dimensione">
                     <span class="num">4</span>
-                    <p><strong>Sviluppo culturale e sociale</strong></p>
+                    <p><strong>UNI EN ISO 22005:2007</strong></p>
                 </div>
             </div>
 
-            <p style="margin-top: 25px;">Un approccio ESG maturo che va oltre la semplice certificazione biologica, abbracciando recupero ecologico, misurazione della carbon footprint, bioarchitettura, valorizzazione culturale e coinvolgimento delle comunità locali.</p>
+            <ol>
+                <li style="margin-top: 20px;"> <strong>Certificazione Biologica</strong><br>
+                    <p> Dal 2021 l'intera superficie coltivata di Planeta (vigneti, oliveti, mandorleti e seminativi) è gestita secondo il disciplinare dell'agricoltura biologica, senza pesticidi e fertilizzanti chimici di sintesi, promuovendo biodiversità, fertilità del suolo e gestione sostenibile delle risorse. </p>
+                </li>
+
+                <li style="margin-top: 20px;"> <strong>Certificazione SOStain®</strong><br>
+                    <p>Planeta è tra i fondatori del programma SOStain®, il principale protocollo di sostenibilità per la viticoltura siciliana. L'azienda aderisce al programma dal 2014 e adotta un modello che integra rigore scientifico, innovazione, trasparenza e pratiche agricole sostenibili.</p>
+                </li>
+
+                 <li style="margin-top: 20px;"> <strong>UNI EN ISO 9001:2015</strong><br>
+                    <p>Per i siti aziendali presenti sul territorio dell'Etna, Planeta possiede la certificazione UNI EN ISO 9001:2015, lo standard internazionale per i sistemi di gestione della qualità. Questa certificazione attesta processi organizzativi strutturati, orientamento al miglioramento continuo e attenzione alla soddisfazione del cliente.</p>
+                </li>
+
+                 <li style="margin-top: 20px;"> <strong>UNI EN ISO 22005:2007</strong><br>
+                    <p>Sempre per i siti dell'Etna, Planeta è certificata UNI EN ISO 22005:2007, norma internazionale dedicata alla tracciabilità della filiera agroalimentare. La certificazione garantisce il controllo e la rintracciabilità del prodotto lungo tutte le fasi della produzione.</p>
+                </li>
+
+            </ol>
         </section>
 
     <footer>
