@@ -90,14 +90,14 @@ header {
 header h1 {
     font-family: serif;
     font-size: 70px;  /* dimensione del font */
-    font-weight: 900px;
+    font-weight: 900;
     margin-bottom: 10px;
 }
 
 header h2 {
     font-family: serif;
     font-size: 30px; 
-    font-weight: 300px;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -125,7 +125,7 @@ nav a {
     text-decoration: none;
     padding: 8px 16px;
     font-size: 20px;
-    font-weight: 700px;
+    font-weight: 500;
     border-radius: 50px;   /* arrotondo gli angoli dell'elemento 'a' */
 }
 
@@ -138,10 +138,9 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
 .presentazione {
 
-    margin-bottom: 70px;
     max-width: 1200px;
     padding: 0 20px;
-    margin: 0 auto 70px;
+    margin: 0 auto 70px; /* Margini: top - sinistra/destra - bottom */
 }
 
 .presentazione h2 { 
@@ -191,6 +190,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     background-color: var(--grigio-base);
     border-radius: 20px;
     overflow: hidden;  /* nascondo tutto ciò che esce dai confini dell'elemento */
+    box-shadow: 0 5px 20px var(--ombra);
 }
 
 .bar {
@@ -201,7 +201,6 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
 
 section {
-    margin-bottom: 70px; /* spazio di 70 px inserito sotto ogni sezione */ 
     scroll-margin-top: 120px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
 
     /* voglio centrare ogni sezione correttamente */
@@ -265,7 +264,8 @@ section p {
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    border: 1px solid rgba(45, 80, 22, 0.1);
+    border: 1px solid var(--ombra);
+    box-shadow: 0 5px 20px var(--ombra);
     transition: transform 0.3s ease;
 }
 
@@ -306,6 +306,7 @@ li {
     border-right: 4px solid var(--arancio-primario); /* bordo destro marcato di 4px con linea continua(solid) colorata */
     padding: 20px 25px; /* paddig superiore/inferiore 20px, destra/sinsitra 25px */
     border-radius: 10px 10px 10px 10px;  /* arrotondamento angoli di 10px */
+    box-shadow: 0 5px 20px var(--ombra);
 }
 
 .info-box-persone {
@@ -316,6 +317,7 @@ li {
     border-radius: 30px 30px 30px 30px;  /* arrotondamento angoli di 20px */
     max-width: 500px;
     margin: 0 auto;
+    box-shadow: 0 5px 20px var(--ombra);
 
 }
 
@@ -359,6 +361,7 @@ li {
     justify-content: center;
     gap: 100px;
     flex-wrap: wrap;
+
 }
 
 .grafico {
@@ -374,6 +377,7 @@ li {
     var(--rosa) 83% 100%
   );
   margin: 20px auto;
+  box-shadow: 0 5px 20px var(--ombra);
 }
 
 .torta-CCNL {
@@ -382,13 +386,10 @@ li {
   border-radius: 50%;
   background: var(--verde);
   margin: 20px auto;
+  box-shadow: 0 5px 20px var(--ombra);
 }
 
 
-/*.legenda {
-  font-family: Arial, sans-serif;
-  margin-left: 280px;
-} */
 
 .legenda span {
   display: inline-block;
@@ -410,6 +411,7 @@ li {
     padding: 40px;
     border-radius: 20px;
     margin-top: 50px;
+    box-shadow: 0 5px 20px var(--ombra);
 }
 
 
