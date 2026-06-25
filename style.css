@@ -102,7 +102,8 @@ header h2 {
 }
 
 
-         /* Navigation Bar */
+
+/* Navigation Bar */
 
 nav {
     background-color: var(--bianco);
@@ -116,7 +117,7 @@ nav ul {
     display: flex;  /* contenitore flexbox sulla stessa riga */
     justify-content: center;  /* allineo gli elementi al centro */
     flex-wrap: wrap;         /* Gli elementi del contenitore flexbox andranno a capo se non hanno spazio sufficiente nella riga */ 
-    gap: 15px;               /* spazio in pixel tra gli elemeneti della Navigation bar */
+    gap: 15px;               /* spazio in pixel tra gli elementi della Navigation bar */
     list-style: none;        /* rimuovo i pallini dalla lista solo per estetica */
 }
 
@@ -135,6 +136,9 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
      
 
          /* Main */
+
+/* +++++++++++++++++++++++++++++++++++++ */
+/* Sezione "Chi Siamo" di presentazione */
 
 .presentazione {
 
@@ -180,7 +184,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 .label {
     margin-bottom: 6px;
     font-weight: 600;
-    color: #444;
+    color: var(--grigio-testo);
     font-size: 22px;
 }
 
@@ -198,6 +202,10 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     background: linear-gradient(to right, var(--arancio-sfondo), var(--arancio-tenue));
     border-radius: 20px;
 }
+
+
+/* FINE Sezione "Chi Siamo" di presentazione */
+/* +++++++++++++++++++++++++++++++++++++ */
 
 
 section {
@@ -264,7 +272,6 @@ section p {
     padding: 25px;
     border-radius: 15px;
     text-align: center;
-    border: 1px solid var(--ombra);
     box-shadow: 0 5px 20px var(--ombra);
     transition: transform 0.3s ease;
 }
@@ -465,3 +472,29 @@ footer {
         footer .download-btn {
             margin-top: 20px;
         }
+
+
+
+/* ============================================ */
+/* MODIFICHE — VISUALIZZAZIONE MOBILE         */
+/* ============================================ */
+/* Questa sezione CSS impone delle modifiche al CSS nel caso in cui il dispositivo abbia una dimensione massima di 700 pixel */
+/* https://www.w3schools.com/cssref/atrule_media.php */
+
+@media (max-width: 700px) {
+
+    /* Navigation Bar */
+    nav { padding: 10px 15px; }
+    nav a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+        /* Per ogni griglia prendi 1 frazione, ovvero una colonna */
+    .highlights              { grid-template-columns: 1fr; }
+    .two-columns             { grid-template-columns: 1fr; }
+   
+    section h2 {font-size: 30px;}
+    section h2 .icon {font-size: 30px;}
+
+}
