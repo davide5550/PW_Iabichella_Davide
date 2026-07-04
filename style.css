@@ -1,4 +1,7 @@
+/* ============================================ */
 /* Variabili per una maggiore comodità di richiamo */
+/* ============================================ */
+
 :root {
     --arancio-primario: #190800;
     --arancio-tenue: #f4a460;
@@ -13,15 +16,19 @@
     --ombra: rgba(0, 0, 0, 0.1);
 }
 
+/* ============================================ */
 /* Configurazioni per tutti gli elementi presenti */
+/* ============================================ */
+
 * {
     margin: 0; /* Reset del margine di tutti gli elementi */
     padding: 0; /* Reset del padding di tutti gli elementi */
     box-sizing: border-box; /* Includi padding e bordi in larghezza ed altezza */
 }
 
-
+/* ============================================ */
 /* Configurazione del body generica */
+/* ============================================ */
 
 body {
     font-family: perpetua;        /* font di scrittura */
@@ -36,7 +43,7 @@ body {
     right: 20px;  /* posizionato a 20 px sopra il bordo destro */
     width: 50px;
     height: 50px;
-    background-color: var(--arancio-tenue);
+    background-color: var(--arancio-primario);
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -53,7 +60,9 @@ body {
     background-color: var(--arancio-primario);
 }
 
+/* ============================================ */
 /* Classe per il bottone di download */
+/* ============================================ */
 
 .download-btn {
     display: inline-flex;   /* utilizzo un contenitore flexbox */
@@ -74,12 +83,19 @@ body {
     /* https://www.w3schools.com/cssref/func_translatey.php */
 }
 
-
+/* ============================================ */
         /* Header */
+/* ============================================ */
 
 header {
-    /* Dissolvenza del colore puramente estetico */
-    background: linear-gradient(to right, var(--arancio-primario) , var(--arancio-tenue)); /*https://www.w3schools.com/css/css3_gradients.asp */
+
+/* Sfondo dell'header con immagine inalterata ma solamente trasparente al 50% (0.5) */
+/* fonte: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sfondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
     color: var(--bianco);
     padding: 80px 20px;
     text-align: center;
@@ -102,8 +118,9 @@ header h2 {
 }
 
 
-
+/* ============================================ */
 /* Navigation Bar */
+/* ============================================ */
 
 nav {
     background-color: var(--bianco);
@@ -134,11 +151,13 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     background-color: var(--arancio-sfondo);
       }
      
-
+/* ============================================ */
          /* Main */
+/* ============================================ */
 
-/* +++++++++++++++++++++++++++++++++++++ */
-/* Sezione "Chi Siamo" di presentazione */
+/* ============================================ */
+    /* Sezione "Chi Siamo" di presentazione */
+/* ============================================ */
 
 .presentazione {
 
@@ -174,8 +193,9 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     font-size: 25px;
 }
 
-
+/* ============================================ */
 /* barra di progressione */
+/* ============================================ */
 
 .stat {
     margin-bottom: 20px;
@@ -203,10 +223,13 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     border-radius: 20px;
 }
 
-
+/* ============================================ */
 /* FINE Sezione "Chi Siamo" di presentazione */
-/* +++++++++++++++++++++++++++++++++++++ */
+/* ============================================ */
 
+/* ============================================ */
+/*              SEZIONI                         */
+/* ============================================ */
 
 section {
     scroll-margin-top: 120px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
@@ -250,9 +273,11 @@ section p {
     font-size: 25px;
 }
 
-
-/* Card */
+/* ============================================ */
+/*                    Card                      */
+/* ============================================ */
 /* https://www.w3schools.com/css/css_grid.asp */
+
 /* contenitore DIV esterno */
 .highlights {
     display: grid;  /* creo un grid con RIGHE e COLONNE */
@@ -295,7 +320,10 @@ section p {
             margin-top: 5px;
         }
 
-        /* Personalizzazioni Liste */
+/* ============================================ */
+/*            Personalizzazioni Liste           */
+/* ============================================ */
+
 ul {
     margin: 15px 0 15px 25px;
 }
@@ -305,7 +333,9 @@ li {
     font-size: 25px
 }
 
+/* ============================================ */
        /* Box informativi */
+/* ============================================ */
 
 .info-box {
     background-color: var(--arancio-sfondo);
@@ -360,8 +390,9 @@ li {
     margin-left: 10px;
 }
 
-
+/* ============================================ */
       /* grafico a torta */
+/* ============================================ */
 
 .grafici {
     display: flex;
@@ -410,7 +441,9 @@ li {
   .verde { background: var(--verde); }
 
 
+/* ============================================ */
       /* Sezione conclusiva */
+/* ============================================ */
 
 
 .conclusione {
@@ -455,10 +488,13 @@ li {
             margin: 0;
         } 
 
+/* ============================================ */
         /* Footer */
+/* ============================================ */
 
 footer {
-    background-color: var(--marrone);
+    /* Dissolvenza del colore puramente estetico */
+    background: linear-gradient(to right, var(--arancio-primario) , var(--arancio-tenue)); /*https://www.w3schools.com/css/css3_gradients.asp */
     color: var(--bianco);
     text-align: center;
     padding: 40px 20px;
@@ -496,5 +532,12 @@ footer {
    
     section h2 {font-size: 30px;}
     section h2 .icon {font-size: 30px;}
+
+    /* Adattamento dello sfondo dell'header */
+    header{
+
+        background-size: 200%;
+        padding: 25px 10px;
+    }
 
 }
