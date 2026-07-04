@@ -164,6 +164,9 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto 70px; /* Margini: top - sinistra/destra - bottom */
+    background: linear-gradient(to right, var(--arancio-primario) , var(--arancio-tenue)); /*https://www.w3schools.com/css/css3_gradients.asp */
+    border-radius: 2%;
+    color: var(--bianco);
 }
 
 .presentazione h2 { 
@@ -174,7 +177,8 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     border-bottom: 3px solid var(--arancio-sfondo);
     display: flex;
     align-items: center;
-    gap: 15px;    
+    gap: 15px;   
+    color: var(--bianco); 
 }
 
 .presentazione h3 { 
@@ -185,12 +189,14 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     display: flex;
     align-items: center;
     gap: 15px;    
+    color: var(--bianco);
 }
 
 .presentazione p { 
     font-family: perpetua;
     margin-bottom: 15px;
     font-size: 25px;
+    color: var(--bianco);
 }
 
 /* ============================================ */
@@ -199,6 +205,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
 .stat {
     margin-bottom: 20px;
+    padding: 15px;
 }
 
 .label {
@@ -206,6 +213,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
     font-weight: 600;
     color: var(--grigio-testo);
     font-size: 22px;
+    color: var(--bianco);
 }
 
 .progress {
