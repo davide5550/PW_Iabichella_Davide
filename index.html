@@ -471,3 +471,476 @@
         <!-- Fine Corpo della pagina -->
 
 </html>
+<!DOCTYPE html>
+<html lang="it">
+
+
+        <!-- Testa della pagina -->
+
+        <!-- Si include un set di caratteri -->
+        <!-- Si inserisce un titolo -->
+        <!-- Si linka il foglio di stile CSS esterno -->
+        <!-- Si inserisce una favicon visibile nella scheda di navigazione -->
+
+
+<head>  
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rendo la mia pagina web adatta sia a desktop che a mobile -->
+    <title>Il caso Planeta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+        <!-- Fine Testa della pagina -->
+
+
+        <!-- Corpo della pagina -->
+
+        <!-- La pagina è suddivisa in: Header, Body e Footer, per gestire singolarmente la formattazione di ogni componente -->
+        <!-- Il Corpo della pagina è diviso in sezioni: una per ogni elemento chiave, raggiungibili attraverso pulsante della navigation bar apposito -->
+        <!-- Ogni sezione presenta un titolo e diverse componenti per migliorare l'esperienza utente (Paragrafi, Card, Lister, Banner, Grafici a torta) -->
+        
+        <!-- Include il bottone per il Download attraverso condivisione Drive ad inizio e fine pagina -->      
+
+
+<body id="top"> <!-- top è un ancoraggio per raggiungere facilmente l'inizio pagina -->
+        <a href="#top" class="back-to-top">⬆</a>	
+        
+		<!-- Intestazione con presentazione azienda e bottone di download del file PDF -->
+	    <header>
+        <h1> Planeta </h1>
+        <h2> Un modello di sostenibilità riconosciuto nel mondo! </h2>
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1uWOU_HDO6V5InJ1Bep63LZYyFHwHfLnc&export=download" download class="download-btn">
+            Scarica il Report PDF (12,6 MB)
+        </a>
+        </header>
+    	<!-- Fine Intestazione -->
+
+
+        <!-- Barra di navigazione per orientare l'utente -->
+    <nav>
+        <ul>
+            <li><a href="#agricoltura">Agricoltura</a></li>
+            <li><a href="#biodiversita">Biodiversità</a></li>
+            <li><a href="#architettura">Architettura</a></li>
+            <li><a href="#energia">Energia</a></li>
+            <li><a href="#emissioni">Emissioni</a></li>
+            <li><a href="#acqua">Acqua</a></li>
+            <li><a href="#packaging">Packaging</a></li>
+            <li><a href="#enoturismo">Enoturismo</a></li>
+            <li><a href="#persone">Persone</a></li>
+            <li><a href="#comunita">Comunità</a></li>
+            <li><a href="#governance">Governance</a></li>
+        </ul>
+    </nav>
+
+
+   		<!-- Pagina Principale -->
+
+    <main>
+        <!-- Presentazione Azienda: Contesto -->
+
+        <div class="presentazione">
+            <h2>Chi siamo?</h2>
+
+            <p> Aziende Agricole Planeta nasce nel 1694, con una storia di 17 generazioni e un ruolo chiave nella rinascita del vino siciliano. <br>
+             La famiglia continua a guidare l’azienda, con un viaggio tra i territori di Menfi, Vittoria, Noto, Etna e Capo Milazzo. <br>
+             Il core business è concentrato principalmente nella produzione e nella distribuzione di olio e vino in tutto il globo. <br> </p>
+             <h3> Alcuni dati: </h3>
+             <p>Nel 2024, Planeta ha prodotto: </p>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero"><span class="icon">🍇</span>1.808</span>
+                    <span class="etichetta">Tonnellate di uva</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero"><span class="icon">🍷</span>2.126.822</span>
+                    <span class="etichetta">Bottiglie di vino con 8 denominazioni e 22 varietà.</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero"><span class="icon">🫒</span>160.567</span>
+                    <span class="etichetta">Bottiglie di olio prodotte.</span>
+                </div>
+            </div>
+
+            <p>La distribuzione internazionale copre:</p>
+
+            <div class="stat">
+                <div class="label"><span class="icon">🇪🇺</span> Vendite vino in Europa - 74%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 74%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">🇮🇹</span> Vendite olio in Italia - 28%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 28%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">⇅🍷</span>Export vino - 55%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 55%;"></div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="label"><span class="icon">⇅🫒</span>Export olio - 72%</div>
+                <div class="progress">
+                    <div class="bar" style="width: 72%;"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Sezione 1: Agricoltura Biologica -->
+        <section id="agricoltura">
+            <h2><span class="icon">🌿</span> Agricoltura Biologica e Gestione del Territorio </h2>
+            
+            <p>L'azione più strutturale dell'impegno aziendale è la <strong>conversione completa delle superfici agricole al biologico</strong>, una scelta che abbraccia ogni aspetto della produzione.</p>
+
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero">100%</span>
+                    <span class="etichetta">Superfici certificate biologiche</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero">759</span>
+                    <span class="etichetta">Ettari totali</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero">268</span>
+                    <span class="etichetta">Ettari di aree naturali (35%)</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Filosofia aziendale:</strong> <u> Esclusione di pesticidi e fertilizzanti chimici di sintesi.</u>  Favoritismo per la fertilità naturale del suolo e la biodiversità, scegliendo volontariamente di non coltivare tutta la superficie disponibile per preservare habitat naturali come macchia mediterranea, torrenti e laghetti.</p>
+            </div>
+        </section>
+
+        <!-- Sezione 2: Biodiversità -->
+        <section id="biodiversita">
+            <h2><span class="icon">🦋</span> Biodiversità: Tutela e Ripristino Attivo </h2>
+            
+            <p>Non si limita a proteggere: lavora attivamente per <strong>ripristinare gli ecosistemi</strong> e recuperare le varietà tradizionali siciliane.</p>
+
+            <div class="two-columns">
+                <div class="column-card">
+                    <h4>🐦 Reintroduzione di Specie Protette</h4>
+                    <p>Nel 2024 è stata avviata la <strong>reintroduzione del Francolino Nero</strong> a Capparrina (Menfi), con l'obiettivo di consolidare e ampliare questi programmi negli anni successivi.</p>
+                </div>
+                <div class="column-card">
+                    <h4>🍇 Progetto "Viti Diverse"</h4>
+                    <p>Recupero di <strong>vitigni autoctoni</strong> e valorizzazione delle varietà tradizionali siciliane poco diffuse, preservando la biodiversità genetica della viticoltura siciliana.</p>
+                </div>
+            </div>
+
+            <h3>Filiera Apiaria</h3>
+            <p>Tra le azioni future è previsto il <strong>rafforzamento della presenza delle api</strong> e delle attività collegate all'impollinazione, fondamentali per la salute degli ecosistemi agricoli.</p>
+        </section>
+
+        <!-- Sezione 3: Architettura -->
+        <section id="architettura">
+            <h2><span class="icon">🏛️</span> Architettura Sostenibile e Tutela del Paesaggio </h2>
+            
+            <p>La sostenibilità guida anche la progettazione delle strutture produttive, con soluzioni innovative che rispettano il territorio.</p>
+
+            <div class="two-columns">
+                <div class="column-card">
+                    <h4>🏔️ Cantina Invisibile – Noto</h4>
+                    <p>La cantina di Buonivini è stata progettata per <strong>integrarsi completamente nel paesaggio</strong>, nascosta nelle colline per ridurre al minimo l'impatto visivo e ambientale.</p>
+                </div>
+                <div class="column-card">
+                    <h4>🔧 Cantina Smontabile – Capo Milazzo</h4>
+                    <p>Un <strong>edificio modulare</strong>, facilmente removibile, con minimo impatto permanente sul territorio: l'architettura che sa farsi da parte.</p>
+                </div>
+            </div>
+
+            <h3>Cura del Paesaggio Rurale</h3>
+            <ul>
+                <li>Manutenzione di sentieri e strade rurali</li>
+                <li>Gestione attenta delle aree verdi</li>
+                <li>Recupero di muri a secco e masserie storiche</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 4: Energia -->
+        <section id="energia">
+            <h2><span class="icon">🌱</span> Energia e Decarbonizzazione </h2>
+            
+            <h3>Produzione di Energia Rinnovabile</h3>
+            
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero">300 m²</span>
+                    <span class="etichetta">Pannelli fotovoltaici a Menfi</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero">320 MWh</span>
+                    <span class="etichetta">Produzione annua</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero">21%</span>
+                    <span class="etichetta">Fabbisogno elettrico coperto</span>
+                </div>
+            </div>
+
+            <h3>Efficienza Energetica</h3>
+            <ul>
+                <li>Monitoraggio sistematico dei consumi</li>
+                <li>Illuminazione LED in tutti gli ambienti</li>
+                <li>Sensori di prossimità per accensione automatica</li>
+                <li>Miglioramento continuo dell'efficienza degli impianti</li>
+            </ul>
+
+            <div class="info-box">
+                <p><strong>Obiettivi futuri:</strong> Ampliamento degli impianti fotovoltaici, acquisto di energia certificata rinnovabile, elettrificazione progressiva degli impianti di riscaldamento e miglioramento dell'isolamento degli edifici.</p>
+            </div>
+        </section>
+
+        <!-- Sezione 5: Emissioni -->
+        <section id="emissioni">
+            <h2><span class="icon">🌍</span> Misurazione e Riduzione delle Emissioni </h2>
+            
+            <p>Nel 2024 è stato compiuto un passo fondamentale: la <strong>misurazione completa della carbon footprint</strong>, includendo per la prima volta tutte le emissioni Scope 1, 2 e 3.</p>
+
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero">5.223</span>
+                    <span class="etichetta">Tonnellate CO₂eq totali</span>
+                </div>
+                <div class="highlight-card">
+                    <span class="numero">74%</span>
+                    <span class="etichetta">Emissioni Scope 3 (filiera)</span>
+                </div>
+            </div>
+
+            <h3>Le Nostre Azioni</h3>
+            <ul>
+                <li>Monitoraggio annuale della carbon footprint</li>
+                <li>Ampliamento degli impianti fotovoltaici</li>
+                <li>Riduzione delle emissioni logistiche</li>
+                <li>Riduzione del peso delle bottiglie</li>
+                <li><span class="icon">♻️</span> Incremento del vetro riciclato</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 6: Acqua -->
+        <section id="acqua">
+            <h2><span class="icon">💧</span> Gestione Sostenibile dell'Acqua </h2>
+            
+            <p>La gestione idrica rappresenta sia un impegno ambientale sia una strategia di <strong>adattamento climatico</strong>.<br>
+            L'azienda si impegna a ridurre i prelievi e migliorare la qualità degli scarichi, adottando pratiche agronomiche sostenibili e tutelando il suolo e il paesaggio.
+            Prelievi totali di acqua nel 2024 pari a 114.361 m3, principalmente per irrigazione (oltre il 95%).
+            Scarichi idrici di 1.153 m3, con gestione mirata per minimizzare impatti ambientali.
+            </p>
+
+            <ul>
+                <li>Monitoraggio costante dei consumi idrici</li>
+                <li>Ottimizzazione delle fonti di approvvigionamento</li>
+                <li>Miglioramento del controllo degli scarichi</li>
+                <li>Pratiche agronomiche che riducono il fabbisogno irriguo</li>
+                <li>Spostamento delle coltivazioni verso aree con minore necessità d'acqua</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 7: Packaging -->
+        <section id="packaging">
+            <h2><span class="icon">📦</span> Packaging Sostenibile </h2>
+            
+            <div class="highlights">
+                <div class="highlight-card">
+                    <span class="numero">&gt;80%</span>
+                    <span class="etichetta">Vetro riciclato post-consumo nelle bottiglie</span>
+                </div>
+                 <div class="highlight-card">
+                    <span class="numero"><span class="icon">🪶</span>470 g</span></span>
+                    <span class="etichetta">Peso medio delle bottiglie di vino</span>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><span class="icon">🎯</span><strong> Obiettivo: </strong>Riduzione del peso delle bottiglie di vino e olio, con peso massimo pari a 550 g/0,75 l.</p>
+            </div>
+
+            <h3>Le Iniziative intraprese</h3>
+            <ul>
+                <li><strong>Bottiglie alleggerite:</strong> riduzione del peso delle bottiglie di vino e olio</li>
+                <li><strong>Vetro riciclato:</strong> oltre l'80% della composizione deriva da vetro riciclato</li>
+                <li><strong>Obiettivo "bottiglia 100% Sicilia":</strong> aumento dell'uso di vetro riciclato e lavorato in Sicilia con fornitori locali</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 8: Enoturismo -->
+        <section id="enoturismo">
+            <h2><span class="icon">🍷</span> Enoturismo Sostenibile </h2>
+            
+            <p>La sostenibilità accompagna ogni visitatore nella scoperta delle nostre tenute.</p>
+
+            <ul>
+                <li>Eliminazione delle bottiglie monouso</li>
+                <li>Installazione di erogatori e sistemi di purificazione dell'acqua</li>
+                <li>Riduzione dei consumi durante le visite</li>
+                <li>Valorizzazione dei prodotti locali</li>
+                <li>Sviluppo di offerte turistiche integrate con il territorio</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 9: Persone -->
+        <section id="persone">
+            <h2><span class="icon">👥</span> Persone e Sostenibilità Sociale </h2>
+ 
+            <div class="info-box-persone">
+                <p><span class="icon">🫂</span>Raggiunti oltre <strong> 255 </strong> dipendenti</p>
+            </div>
+
+            <div class="grafici">
+            
+                <div class="grafico">
+                    <div class="torta"></div>
+                    <div class="legenda">
+                        <p><span class="blu"></span> Uomini 83%</p>
+                        <p><span class="rosa"></span> Donne 17%</p>
+                    </div>
+                </div>
+            
+                <div class="grafico">
+                    <div class="torta-CCNL"></div>
+                    <div class="legenda">
+                        <p><span class="verde"></span> lavoratori coperti da CCNL 100%</p>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="two-columns">
+                <div class="column-card">
+                    <h4>📚 Formazione</h4>
+                    <p>Nel 2024 sono state erogate <strong>oltre 650 ore di formazione</strong>. </p>
+                        <p><strong> Il piano prevede:</strong> <ul> <li> mappatura delle competenze </li> <li> piani formativi personalizzati </li> <li> tutoraggio interno </li>  <li> sostegno economico alla formazione esterna. </li> </ul></p>
+                </div>
+                <div class="column-card">
+                    <h4>💚 Benessere</h4>
+                    <p><li>Welfare aziendale</li> <li>ascolto periodico del clima interno</li><li> sistemi anonimi di segnalazione</li> <li>attività di team building</li></p>
+                </div>
+            </div>
+
+            <h3>Sicurezza sul Lavoro</h3>
+            <ul>
+                <li>Formazione obbligatoria continua</li>
+                <li>Monitoraggio sistematico degli infortuni</li>
+                <li>Analisi dei "near miss" (incidenti mancati)</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 10: Comunità -->
+        <section id="comunita">
+            <h2><span class="icon">🤝</span> Comunità, Cultura e Sviluppo Locale </h2>
+            
+            <div class="info-box">
+                <p>Nel 2024 Planeta ha destinato <strong>oltre 30.000 euro</strong> a donazioni, sponsorizzazioni sociali e iniziative culturali.</p>
+            </div>
+
+            <h3>Le Nostre Attività</h3>
+            <ul>
+                <li>Collaborazione con scuole e università</li>
+                <li>Finanziamento di borse di studio</li>
+                <li>Attivazione di tirocini formativi</li>
+                <li>Organizzazione di eventi culturali nelle cantine</li>
+                <li>Sostegno a progetti educativi e ambientali</li>
+            </ul>
+
+            <h3>Esempi Concreti</h3>
+            <ul>
+                <li>Sostegno alla pubblicazione di un libro dedicato alla biodiversità</li>
+                <li>Contributo alla realizzazione di un parco giochi a Menfi</li>
+            </ul>
+        </section>
+
+        <!-- Sezione 11: Governance -->
+        <section id="governance">
+            <h2><span class="icon">⚖️</span> Filiera Responsabile e Governance </h2>
+            
+            <div class="two-columns">
+                <div class="column-card">
+                    <h4>🔗 Catena di Fornitura</h4>
+                    <ul>
+                        <li>Codice di condotta per i fornitori</li>
+                        <li>Criteri ESG nella selezione dei partner</li>
+                        <li>Priorità a fornitori locali</li>
+                        <li>Monitoraggio delle pratiche di sostenibilità</li>
+                    </ul>
+                </div>
+                <div class="column-card">
+                    <h4>🏢 Governance Aziendale</h4>
+                    <ul>
+                        <li>Adozione di un codice etico</li>
+                        <li>Pubblicazione annuale del report di sostenibilità</li>
+                        <li>Formazione su etica e compliance</li>
+                        <li>Sistemi di monitoraggio strutturati</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusione -->
+        <section class="conclusione">
+            <h2><span class="icon">📜</span> Le nostre certificazioni</h2>
+            
+            <p>La sostenibilità per Planeta non è un obiettivo dichiarato, <strong>ma un impegno concreto certificato da standard ,</strong> riconosciuti a livello nazionale e internazionale. </p>
+
+            <div class="quattro-dimensioni">
+                <div class="dimensione">
+                    <span class="num">1</span>
+                    <p><strong>Certificazione Biologica</strong></p>
+                </div>
+                <div class="dimensione">
+                    <span class="num">2</span>
+                    <p><strong>Certificazione SOStain®</strong></p>
+                </div>
+                <div class="dimensione">
+                    <span class="num">3</span>
+                    <p><strong>UNI EN ISO 9001:2015</strong></p>
+                </div>
+                <div class="dimensione">
+                    <span class="num">4</span>
+                    <p><strong>UNI EN ISO 22005:2007</strong></p>
+                </div>
+            </div>
+
+            <ol>
+                <li style="margin-top: 20px;"> <strong>Certificazione Biologica</strong><span class="icon">🌱</span> <br>
+                    <p> Dal 2021 l'intera superficie coltivata di Planeta (vigneti, oliveti, mandorleti e seminativi) è gestita secondo il disciplinare dell'agricoltura biologica, senza pesticidi e fertilizzanti chimici di sintesi, promuovendo biodiversità, fertilità del suolo e gestione sostenibile delle risorse. </p>
+                </li>
+
+                <li style="margin-top: 20px;"> <strong>Certificazione SOStain®</strong><span class="icon">🍇</span> <br>
+                    <p>Planeta è tra i fondatori del programma SOStain®, il principale protocollo di sostenibilità per la viticoltura siciliana. L'azienda aderisce al programma dal 2014 e adotta un modello che integra rigore scientifico, innovazione, trasparenza e pratiche agricole sostenibiliArchitettura p>
+                </li>
+
+                 <li style="margin-top: 20px;"> <strong>UNI EN ISO 9001:2015</strong><span class="icon">📈</span> <br>
+                    <p>Per i siti aziendali presenti sul territorio dell'Etna, Planeta possiede la certificazione UNI EN ISO 9001:2015, lo standard internazionale per i sistemi di gestione della qualità. Questa certificazione attesta processi organizzativi strutturati, orientamento al miglioramento continuo e attenzione alla soddisfazione del cliente.</p>
+                </li>
+
+                 <li style="margin-top: 20px;"> <strong>UNI EN ISO 22005:2007</strong><span class="icon">✒️</span> <br>
+                    <p>Sempre per i siti dell'Etna, Planeta è certificata UNI EN ISO 22005:2007, norma internazionale dedicata alla tracciabilità della filiera agroalimentare. La certificazione garantisce il controllo e la rintracciabilità del prodotto lungo tutte le fasi della produzione.</p>
+                </li>
+
+            </ol>
+        </section>
+
+    <footer>
+        <p>Planeta – La sostenibilità è il nostro punto forte</p>
+        <a href="https://drive.usercontent.google.com/u/0/uc?id=1uWOU_HDO6V5InJ1Bep63LZYyFHwHfLnc&export=download" download class="download-btn">
+            Scarica il Report PDF (12,6 MB)
+        </a>
+    </footer>
+
+</body>
+
+        <!-- Fine Corpo della pagina -->
+
+</html>
