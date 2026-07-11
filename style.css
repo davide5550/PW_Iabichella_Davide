@@ -93,9 +93,9 @@ header {
 /* fonte: https://www.w3schools.com/howto/howto_css_hero_image.asp */
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sfondo.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     color: var(--bianco);
     padding: 80px 20px;
     text-align: center;
