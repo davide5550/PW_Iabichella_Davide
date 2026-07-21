@@ -13,7 +13,7 @@
     --rosa: #FFC0CB;
     --verde: #008000;
     --grigio-base: #eeeeee;
-    --ombra: rgba(0, 0, 0, 0.1);
+    --ombra: rgba(0, 0, 0, 0.1); /* Valori RGB 0-255 e trasparenza 0-1 */
 }
 
 /* ============================================ */
@@ -33,26 +33,26 @@
 body {
     font-family: perpetua;        /* font di scrittura */
     line-height: 1.5;             /* spazio tra una riga e l'altra 1.5 moltiplicato per il font-size */
-    color: var(--grigio-testo);
-    background-color: var(--bianco);
+    color: var(--grigio-testo);   /* colore del testo */
+    background-color: var(--bianco); /* colore di sfondo */
 }
 
 .back-to-top {
-    position: fixed; /* elemento sempre visibile sullo schermo, anche quando scrolli */
+    position: fixed; /* elemento sempre visibile sullo schermo, anche quando scorri */
     bottom: 20px; /* posizionato a 20 px sopra il bordo inferiore */
     right: 20px;  /* posizionato a 20 px sopra il bordo destro */
-    width: 50px;
-    height: 50px;
+    width: 50px;  /* larghezza in pixel*/
+    height: 50px; /* altezza in pixel*/
     background-color: var(--arancio-primario);
     color: white;
-    border-radius: 50%;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    box-shadow: 0 4px 15px var(--ombra);
+    border-radius: 50%;  /* arrotondamento angoli */
+    text-decoration: none; /* rimuove sottolineato link */
+    display: flex;  /* contenitore flexbox sulla stessa riga */
+    justify-content: center; /* allineo gli elementi al centro orizzontalmente */
+    align-items: center;  /* allineo gli elementi al centro verticalmente */
+    font-size: 24px; /* dimensione testo */
+    font-weight: bold;   /* spessore testo */
+    box-shadow: 0 4px 15px var(--ombra); /* ombra contenitore flexbox */
     z-index: 1000;  /* l'elemento si troverà sopra ogni altro elemento sempre visibile: >1000 valore per gli elementi in primo piano */
 }
 
@@ -65,13 +65,13 @@ body {
 /* ============================================ */
 
 .download-btn {
-    display: inline-flex;   /* utilizzo un contenitore flexbox */
-    align-items: center;    /* con contenuto centrato */
-    background-color: var(--bianco);   /* colore sfondo */
-    color: var(--arancio-primario);    /* colore testo */
+    display: inline-flex;  
+    align-items: center;   
+    background-color: var(--bianco);  
+    color: var(--arancio-primario);   
     padding: 15px 35px;        /* spazio tra content e border */
-    border-radius: 50px;       /* arrotondamento angoli */
-    text-decoration: none;      /* pulisci link da sottolineato */
+    border-radius: 50px;       
+    text-decoration: none;     
     font-weight: 600;           /* spessore del testo  */
     transition: all 0.3s ease;   /* piccola animazione al passaggio del mouse */
     box-shadow: 0 4px 15px var(--ombra);  /* ombra con nessuno spostamento orizzontale , 4px di ombra verso il basso e 15px di sfocatura */
@@ -93,10 +93,10 @@ header {
 /* fonte: https://www.w3schools.com/howto/howto_css_hero_image.asp */
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("sfondo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--bianco);
+    background-size: cover;        /* l'immagine viene ridimensionata così che copra l'intero elemento header */
+    background-repeat: no-repeat;  /* Nessuna ripetizione dell'immagine di sfondo */
+    background-position: center;   /* posizionamento immagine di sfondo */
+    color: var(--bianco);   
     padding: 80px 20px;
     text-align: center;
     position: relative;  /* l'elemento header sarà riferimento per gli elementi figli */
@@ -104,10 +104,10 @@ header {
 }
 
 header h1 {
-    font-family: serif;
+    font-family: serif; /* font di testo utilizzato */
     font-size: 70px;  /* dimensione del font */
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* dimensione del margine inferiore */
 }
 
 header h2 {
@@ -131,8 +131,8 @@ nav {
 }
 
 nav ul {
-    display: flex;  /* contenitore flexbox sulla stessa riga */
-    justify-content: center;  /* allineo gli elementi al centro */
+    display: flex;  
+    justify-content: center;  
     flex-wrap: wrap;         /* Gli elementi del contenitore flexbox andranno a capo se non hanno spazio sufficiente nella riga */ 
     gap: 15px;               /* spazio in pixel tra gli elementi della Navigation bar */
     list-style: none;        /* rimuovo i pallini dalla lista solo per estetica */
@@ -144,7 +144,7 @@ nav a {
     padding: 8px 16px;
     font-size: 20px;
     font-weight: 500;
-    border-radius: 50px;   /* arrotondo gli angoli dell'elemento 'a' */
+    border-radius: 50px;   
 }
 
 nav a:hover {              /* semplicemente applica un colore quando l'utente passa il mouse sull'elemento 'a' */
@@ -161,8 +161,8 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 
 .presentazione {
 
-    max-width: 1200px;
-    padding: 0 20px;
+    max-width: 1200px;   /* larghezza massima definita in pixel */
+    padding: 0 20px;     /* padding superiore/inferiore=0 e laterale=20px */
     margin: 0 auto 70px; /* Margini: top - sinistra/destra - bottom */
     background: linear-gradient(to right, var(--arancio-primario) , var(--arancio-tenue)); /*https://www.w3schools.com/css/css3_gradients.asp */
     border-radius: 2%;
@@ -242,7 +242,7 @@ nav a:hover {              /* semplicemente applica un colore quando l'utente pa
 section {
     scroll-margin-top: 120px;  /* Ogni sezione che visiti avrà uno spazio sopra di esso di 100 px così da essere certi di visualizzare correttamente tutti gli elementi */
 
-    /* voglio centrare ogni sezione correttamente */
+    /* Dichiarazioni per centrare ogni sezione correttamente */
     max-width: 1200px; /* max larghezza del contenuto di ogni sezione */
     margin: 0 auto 70px; /* 0 spazio sopra, laterali automatici calcolati dal browser considerando sempre i 1200px di larghezza massima, 70 px di spazio sotto */
     padding: 0 20px;  /* il padding del box content(section) avrà 0 px sopra e sotto e 20 px lateralmente */
@@ -372,9 +372,9 @@ li {
 }
 
 .two-columns {
-    display: grid;  /* contenitore grid */
-    grid-template-columns: auto auto;  /* grid container con due colonne la cui dimensione dipende dal contenuto e dal container  https://www.w3schools.com/cssref/pr_grid-template-columns.php */ 
-    gap: 30px;  /* distanza tra gli elementi */
+    display: grid;  
+    grid-template-columns: auto auto;  
+    gap: 30px; 
     margin: 25px 0;
 
 }
