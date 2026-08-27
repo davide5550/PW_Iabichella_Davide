@@ -5,8 +5,8 @@ Organizza in sezioni i macroargomenti andando a descrivere all'interno di ognuno
 
 ## Anteprima
 
-![Uploading image.png…]()
 
+<img width="2215" height="1247" alt="image" src="https://github.com/user-attachments/assets/d42f6897-37d0-40bd-b2d1-45b665646dea" />
 
 ## Tecnologie
 
