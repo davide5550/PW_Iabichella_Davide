@@ -15,7 +15,7 @@ Organizza in sezioni i macroargomenti andando a descrivere all'interno di ognuno
 
 ## Struttura del progetto
 
-PW_Iabichella_Davide/
+PW_Iabichella_Davide/ \n
 ├── index.html
 ├── style.css
 ├── favicon.png
