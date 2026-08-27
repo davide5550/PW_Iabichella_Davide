@@ -22,3 +22,23 @@ PW_Iabichella_Davide/
 ├── report-sostenibilita-planeta.pdf
 ├── sfondo.png
 └── README.md
+```
+
+```md
+- `index.html` → struttura principale della pagina
+- `style.css` → stili e layout della pagina
+- `favicon.png` → logo dell'azienda
+- `report-sostenibilita-planeta.pdf` → Report ufficiale dell'impresa
+- `sfondo.png` → immagine di sfondo nell'intestazione
+- `README.md` → File di ReadMe in Markdown
+```
+
+## Come eseguire il progetto
+
+1. Scarica il repository.
+2. Apri la cartella del progetto.
+3. Apri `index.html` nel browser.
+
+## Autore
+
+Davide Iabichella
