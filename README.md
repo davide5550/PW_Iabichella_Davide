@@ -35,7 +35,7 @@ PW_Iabichella_Davide/
 
 ## Come eseguire il progetto
 
-1. Scarica il repository.
+1. Scarica il file ZIP.
 2. Apri la cartella del progetto.
 3. Apri `index.html` nel browser.
 
